@@ -14,6 +14,9 @@
 		221D1CDA27C2EC1300EDFFF8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 221D1CD927C2EC1300EDFFF8 /* Assets.xcassets */; };
 		221D1CDD27C2EC1300EDFFF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 221D1CDB27C2EC1300EDFFF8 /* LaunchScreen.storyboard */; };
 		221D1CE527C324B100EDFFF8 /* SearchResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D1CE427C324B100EDFFF8 /* SearchResult.swift */; };
+		221D1CE727C3E71600EDFFF8 /* SearchResultCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221D1CE627C3E71600EDFFF8 /* SearchResultCell.xib */; };
+		221D1CE927C3F80800EDFFF8 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D1CE827C3F80800EDFFF8 /* SearchResultCell.swift */; };
+		221D1CEB27C404B200EDFFF8 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221D1CEA27C404B200EDFFF8 /* NothingFoundCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,9 @@
 		221D1CDC27C2EC1300EDFFF8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		221D1CDE27C2EC1300EDFFF8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		221D1CE427C324B100EDFFF8 /* SearchResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResult.swift; sourceTree = "<group>"; };
+		221D1CE627C3E71600EDFFF8 /* SearchResultCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchResultCell.xib; sourceTree = "<group>"; };
+		221D1CE827C3F80800EDFFF8 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
+		221D1CEA27C404B200EDFFF8 /* NothingFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +64,17 @@
 		221D1CCF27C2EC1200EDFFF8 /* StoreSearch */ = {
 			isa = PBXGroup;
 			children = (
-				221D1CD027C2EC1200EDFFF8 /* AppDelegate.swift */,
-				221D1CE427C324B100EDFFF8 /* SearchResult.swift */,
-				221D1CD227C2EC1200EDFFF8 /* SceneDelegate.swift */,
-				221D1CD427C2EC1200EDFFF8 /* SearchViewController.swift */,
-				221D1CD627C2EC1200EDFFF8 /* Main.storyboard */,
-				221D1CD927C2EC1300EDFFF8 /* Assets.xcassets */,
-				221D1CDB27C2EC1300EDFFF8 /* LaunchScreen.storyboard */,
 				221D1CDE27C2EC1300EDFFF8 /* Info.plist */,
+				221D1CD027C2EC1200EDFFF8 /* AppDelegate.swift */,
+				221D1CD227C2EC1200EDFFF8 /* SceneDelegate.swift */,
+				221D1CE427C324B100EDFFF8 /* SearchResult.swift */,
+				221D1CE827C3F80800EDFFF8 /* SearchResultCell.swift */,
+				221D1CD427C2EC1200EDFFF8 /* SearchViewController.swift */,
+				221D1CD927C2EC1300EDFFF8 /* Assets.xcassets */,
+				221D1CEA27C404B200EDFFF8 /* NothingFoundCell.xib */,
+				221D1CE627C3E71600EDFFF8 /* SearchResultCell.xib */,
+				221D1CDB27C2EC1300EDFFF8 /* LaunchScreen.storyboard */,
+				221D1CD627C2EC1200EDFFF8 /* Main.storyboard */,
 			);
 			path = StoreSearch;
 			sourceTree = "<group>";
@@ -130,6 +139,8 @@
 			files = (
 				221D1CDD27C2EC1300EDFFF8 /* LaunchScreen.storyboard in Resources */,
 				221D1CDA27C2EC1300EDFFF8 /* Assets.xcassets in Resources */,
+				221D1CE727C3E71600EDFFF8 /* SearchResultCell.xib in Resources */,
+				221D1CEB27C404B200EDFFF8 /* NothingFoundCell.xib in Resources */,
 				221D1CD827C2EC1200EDFFF8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +156,7 @@
 				221D1CD127C2EC1200EDFFF8 /* AppDelegate.swift in Sources */,
 				221D1CE527C324B100EDFFF8 /* SearchResult.swift in Sources */,
 				221D1CD327C2EC1200EDFFF8 /* SceneDelegate.swift in Sources */,
+				221D1CE927C3F80800EDFFF8 /* SearchResultCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
