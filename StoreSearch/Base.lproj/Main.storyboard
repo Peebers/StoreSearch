@@ -15,9 +15,39 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="k4p-sI-Bov">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="0Xw-zo-2xI"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="D6W-zD-BO2"/>
+                                </connections>
+                            </tableView>
+                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="SJY-vo-wNG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="51"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="fmc-Aw-aRz"/>
+                                </connections>
+                            </searchBar>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="SJY-vo-wNG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="8O7-nm-Y67"/>
+                            <constraint firstItem="k4p-sI-Bov" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Hb9-aj-sts"/>
+                            <constraint firstItem="SJY-vo-wNG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="N8h-lF-hqi"/>
+                            <constraint firstItem="k4p-sI-Bov" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PnC-o3-hP3"/>
+                            <constraint firstItem="k4p-sI-Bov" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="b7A-fc-Ytk"/>
+                            <constraint firstItem="SJY-vo-wNG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kPQ-mE-Nyr"/>
+                            <constraint firstItem="k4p-sI-Bov" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tS5-fW-0uS"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="searchBar" destination="SJY-vo-wNG" id="8Xa-y0-Uu3"/>
+                        <outlet property="tableView" destination="k4p-sI-Bov" id="XEm-5B-NNj"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
