@@ -17,6 +17,7 @@
 		221D1CE927C3F80800EDFFF8 /* SearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 221D1CE827C3F80800EDFFF8 /* SearchResultCell.swift */; };
 		221D1CEB27C404B200EDFFF8 /* NothingFoundCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 221D1CEA27C404B200EDFFF8 /* NothingFoundCell.xib */; };
 		22A0924B27C4833600564AED /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22A0924A27C4833600564AED /* LoadingCell.xib */; };
+		22A0924D27C4A76300564AED /* UIImageView+DownloadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22A0924C27C4A76300564AED /* UIImageView+DownloadImage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		221D1CE827C3F80800EDFFF8 /* SearchResultCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultCell.swift; sourceTree = "<group>"; };
 		221D1CEA27C404B200EDFFF8 /* NothingFoundCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NothingFoundCell.xib; sourceTree = "<group>"; };
 		22A0924A27C4833600564AED /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
+		22A0924C27C4A76300564AED /* UIImageView+DownloadImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+DownloadImage.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				221D1CE427C324B100EDFFF8 /* SearchResult.swift */,
 				221D1CE827C3F80800EDFFF8 /* SearchResultCell.swift */,
 				221D1CD427C2EC1200EDFFF8 /* SearchViewController.swift */,
+				22A0924C27C4A76300564AED /* UIImageView+DownloadImage.swift */,
 				221D1CD927C2EC1300EDFFF8 /* Assets.xcassets */,
 				22A0924A27C4833600564AED /* LoadingCell.xib */,
 				221D1CEA27C404B200EDFFF8 /* NothingFoundCell.xib */,
@@ -154,6 +157,7 @@
 			files = (
 				221D1CD527C2EC1200EDFFF8 /* SearchViewController.swift in Sources */,
 				221D1CD127C2EC1200EDFFF8 /* AppDelegate.swift in Sources */,
+				22A0924D27C4A76300564AED /* UIImageView+DownloadImage.swift in Sources */,
 				221D1CE527C324B100EDFFF8 /* SearchResult.swift in Sources */,
 				221D1CD327C2EC1200EDFFF8 /* SceneDelegate.swift in Sources */,
 				221D1CE927C3F80800EDFFF8 /* SearchResultCell.swift in Sources */,
