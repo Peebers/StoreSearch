@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait" appearance="dark"/>
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
@@ -33,6 +33,27 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="fmc-Aw-aRz"/>
                                 </connections>
                             </searchBar>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="A10-iw-Nt3">
+                                <rect key="frame" x="0.0" y="51" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES"/>
+                                <items>
+                                    <barButtonItem style="plain" id="sgu-3X-N0K">
+                                        <segmentedControl key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="R7G-mE-CIW">
+                                            <rect key="frame" x="16" y="5.5" width="343" height="33"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <segments>
+                                                <segment title="All"/>
+                                                <segment title="Music"/>
+                                                <segment title="Software"/>
+                                                <segment title="E-Books"/>
+                                            </segments>
+                                            <connections>
+                                                <action selector="segmentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="s4h-jf-TUR"/>
+                                            </connections>
+                                        </segmentedControl>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -42,12 +63,14 @@
                             <constraint firstItem="SJY-vo-wNG" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="N8h-lF-hqi"/>
                             <constraint firstItem="k4p-sI-Bov" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="PnC-o3-hP3"/>
                             <constraint firstItem="k4p-sI-Bov" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="b7A-fc-Ytk"/>
+                            <constraint firstItem="A10-iw-Nt3" firstAttribute="top" secondItem="SJY-vo-wNG" secondAttribute="bottom" id="bme-yu-Wrf"/>
                             <constraint firstItem="SJY-vo-wNG" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="kPQ-mE-Nyr"/>
                             <constraint firstItem="k4p-sI-Bov" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="tS5-fW-0uS"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="searchBar" destination="SJY-vo-wNG" id="8Xa-y0-Uu3"/>
+                        <outlet property="segmentedControl" destination="R7G-mE-CIW" id="l3U-eE-Ddg"/>
                         <outlet property="tableView" destination="k4p-sI-Bov" id="XEm-5B-NNj"/>
                     </connections>
                 </viewController>
